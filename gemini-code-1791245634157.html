@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rakesh Sweets & Snacks | Mithai Photo Gallery & Rate List • Agra</title>
+  <meta property="og:title" content="Rakesh Sweets & Snacks — Live Mithai Photos & Rate List, Agra" />
+  <meta property="og:description" content="100% Shuddh Desi Ghee Mithai, Agra Special Bedai-Imarti, Fresh Khoya-Paneer & Complete Rate List." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Modern Luxury Fonts (Bhagat Halwai Style: Playfair Display + Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --burgundy: #7B1113;
+      --burgundy-dark: #4E080A;
+      --gold: #C59B27;
+      --gold-soft: #E6C762;
+      --gold-pale: #F7EFE0;
+      --bg-ivory: #FCF9F5;
+      --bg-white: #FFFFFF;
+      --text-charcoal: #1E1B18;
+      --text-muted: #6E655F;
+      --border-subtle: #EAE2D6;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; background: var(--bg-ivory); color: var(--text-charcoal); font-family: var(--sans); }
+    body { overflow-x: hidden; padding-bottom: 95px; }
+
+    /* 1. TOP ANNOUNCEMENT BAR */
+    .announcement-bar {
+      background: var(--burgundy-dark);
+      color: #F5E6C8;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      padding: 9px 16px;
+      text-align: center;
+      border-bottom: 1px solid rgba(197, 155, 39, 0.3);
+    }
+
+    .announcement-bar strong { color: var(--gold-soft); font-weight: 700; }
+
+    /* 2. MODERN BHAGAT-STYLE HEADER */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+    }
+
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-identity {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+
+    .royal-monogram {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: var(--burgundy);
+      border: 1.5px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-soft);
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .brand-text h1 {
+      font-family: var(--serif);
+      font-size: clamp(20px, 2.4vw, 26px);
+      font-weight: 700;
+      color: var(--burgundy-dark);
+      letter-spacing: 0.8px;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 3px;
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .desktop-nav a {
+      text-decoration: none;
+      color: var(--text-charcoal);
+      font-size: 13px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .desktop-nav a:hover { color: var(--burgundy); }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .qr-btn-modern {
+      background: var(--gold-pale);
+      border: 1px solid rgba(197, 155, 39, 0.45);
+      color: var(--burgundy-dark);
+      padding: 9px 14px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .cart-pill-btn {
+      background: var(--burgundy);
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 6px 18px rgba(123, 17, 19, 0.22);
+    }
+
+    /* 3. EDITORIAL HERO BANNER */
+    .hero-showcase {
+      background: linear-gradient(115deg, #3A0608 0%, #680E11 55%, #4A080A 100%);
+      color: #fff;
+    }
+
+    .hero-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 56px 24px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      border: 1px solid rgba(230, 199, 98, 0.4);
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 18px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .hero-content h2 {
+      font-family: var(--serif);
+      font-size: clamp(32px, 4.5vw, 54px);
+      font-weight: 600;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .hero-content h2 em {
+      font-style: italic;
+      color: var(--gold-soft);
+      font-weight: 400;
+    }
+
+    .hero-content p {
+      font-size: 15.5px;
+      color: rgba(255, 248, 235, 0.88);
+      line-height: 1.65;
+      margin-bottom: 26px;
+      max-width: 560px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .btn-gold-solid {
+      background: linear-gradient(135deg, var(--gold), #DFB43A);
+      color: #1A0D0E;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .btn-ghost-light {
+      background: transparent;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      text-decoration: none;
+      padding: 14px 24px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .hero-metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .metric-item strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 20px;
+      color: var(--gold-soft);
+    }
+
+    .metric-item span { font-size: 12px; color: rgba(255, 255, 255, 0.75); }
+
+    .hero-visual-frame {
+      position: relative;
+      border-radius: 22px;
+      padding: 10px;
+      background: linear-gradient(145deg, rgba(230, 199, 98, 0.35), rgba(255, 255, 255, 0.05));
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-visual-frame img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 14px;
+      display: block;
+    }
+
+    .floating-specialty-card {
+      position: absolute;
+      bottom: -14px;
+      left: 20px;
+      background: #fff;
+      color: var(--text-charcoal);
+      padding: 10px 16px;
+      border-radius: 12px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+      border-left: 4px solid var(--burgundy);
+      font-size: 12px;
+    }
+
+    .floating-specialty-card strong { display: block; color: var(--burgundy); font-size: 13px; }
+
+    /* 4. CIRCULAR SHOP BY CATEGORY STRIP */
+    .circular-categories {
+      max-width: 1240px;
+      margin: 44px auto 16px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .cat-strip-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 16px;
+    }
+
+    .circle-cat-item {
+      cursor: pointer;
+      width: 125px;
+      text-align: center;
+      transition: transform 0.25s ease;
+    }
+
+    .circle-cat-item:hover { transform: translateY(-5px); }
+
+    .circle-img-ring {
+      width: 98px;
+      height: 98px;
+      margin: 0 auto 8px;
+      border-radius: 50%;
+      padding: 3.5px;
+      background: linear-gradient(135deg, var(--gold), var(--burgundy));
+      box-shadow: 0 8px 20px rgba(123, 17, 19, 0.14);
+    }
+
+    .circle-img-ring img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2.5px solid #fff;
+    }
+
+    .circle-cat-item span {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--text-charcoal);
+      display: block;
+    }
+
+    .circle-cat-item small {
+      font-size: 11px;
+      color: var(--burgundy);
+      font-weight: 600;
+    }
+
+    /* 5. SWEETS PHOTO GALLERY + RATE CARDS */
+    .collection-section {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 36px 24px 60px;
+    }
+
+    .section-title-wrap {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .section-title-wrap .eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--burgundy);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .section-title-wrap h2 {
+      font-family: var(--serif);
+      font-size: clamp(26px, 3.5vw, 38px);
+      color: var(--text-charcoal);
+      font-weight: 600;
+    }
+
+    .section-title-wrap p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .filter-pill {
+      background: #fff;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-pill.active, .filter-pill:hover {
+      background: var(--burgundy);
+      color: #fff;
+      border-color: var(--burgundy);
+      box-shadow: 0 6px 16px rgba(123, 17, 19, 0.18);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+      gap: 24px;
+    }
+
+    .product-card {
+      background: var(--bg-white);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 36px rgba(30, 27, 24, 0.09);
+      border-color: var(--gold);
+    }
+
+    .product-media {
+      position: relative;
+      height: 205px;
+      overflow: hidden;
+      background: #F4EFE6;
+    }
+
+    .product-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .product-card:hover .product-media img { transform: scale(1.06); }
+
+    /* Rate Pill Overlay on Photo Bottom-Left */
+    .photo-rate-ribbon {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: rgba(30, 27, 24, 0.88);
+      backdrop-filter: blur(6px);
+      color: var(--gold-soft);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(230, 199, 98, 0.4);
+    }
+
+    .product-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--burgundy);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 11px;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .veg-icon {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border: 1.5px solid #15803D;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .veg-icon::after {
+      content: "";
+      width: 9px;
+      height: 9px;
+      background: #15803D;
+      border-radius: 50%;
+    }
+
+    .product-info { padding: 16px 18px 18px; }
+
+    .product-title {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-charcoal);
+      margin-bottom: 4px;
+      line-height: 1.25;
+    }
+
+    .product-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+
+    /* Clear 3-Column Rate Table Under Every Sweet Photo */
+    .rate-breakdown-box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      background: var(--bg-ivory);
+      padding: 6px;
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+      margin-bottom: 14px;
+    }
+
+    .rate-cell {
+      background: #fff;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      padding: 6px 4px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .rate-cell span.w-label {
+      display: block;
+      font-size: 10.5px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .rate-cell strong.w-price {
+      display: block;
+      font-size: 13.5px;
+      color: var(--text-charcoal);
+      font-weight: 800;
+      margin-top: 1px;
+    }
+
+    .rate-cell.active {
+      background: var(--burgundy);
+      border-color: var(--burgundy);
+      box-shadow: 0 3px 8px rgba(123, 17, 19, 0.2);
+    }
+
+    .rate-cell.active span.w-label { color: var(--gold-soft); }
+    .rate-cell.active strong.w-price { color: #fff; }
+
+    .product-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 10px;
+      border-top: 1px dashed var(--border-subtle);
+    }
+
+    .product-price {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--burgundy-dark);
+    }
+
+    .product-price small {
+      display: block;
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .btn-add-bag {
+      background: var(--burgundy);
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 50px;
+      font-size: 12.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-add-bag:hover { background: var(--burgundy-dark); }
+    .btn-add-bag:active { transform: scale(0.95); }
+
+    /* =========================================================
+       6. COMPLETE DIGITAL RATE LIST TABLE (पूरा भाव चार्ट)
+       ========================================================= */
+    .full-ratelist-section {
+      max-width: 1180px;
+      margin: 0 auto 70px;
+      padding: 0 24px;
+    }
+
+    .ratelist-card {
+      background: #fff;
+      border: 2px solid var(--gold);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 14px 36px rgba(30, 27, 24, 0.06);
+    }
+
+    .ratelist-header {
+      background: linear-gradient(125deg, var(--burgundy-dark), var(--burgundy));
+      color: #fff;
+      padding: 22px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .ratelist-header h3 {
+      font-family: var(--serif);
+      font-size: clamp(20px, 2.8vw, 26px);
+      color: var(--gold-soft);
+    }
+
+    .ratelist-header p {
+      font-size: 12.5px;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .rate-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13.5px;
+    }
+
+    .rate-table th {
+      background: var(--gold-pale);
+      color: var(--burgundy-dark);
+      font-weight: 700;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border-subtle);
+      white-space: nowrap;
+    }
+
+    .rate-table td {
+      padding: 12px 18px;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: middle;
+    }
+
+    .rate-table tr:hover { background: #FDFBF7; }
+
+    .table-item-cell {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .table-item-cell img {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid var(--border-subtle);
+      flex-shrink: 0;
+    }
+
+    .quick-add-pill {
+      background: var(--gold-pale);
+      color: var(--burgundy-dark);
+      border: 1px solid var(--gold);
+      padding: 6px 12px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .quick-add-pill:hover {
+      background: var(--burgundy);
+      color: #fff;
+      border-color: var(--burgundy);
+    }
+
+    /* 7. BULK & WEDDING GIFTING */
+    .gifting-section {
+      max-width: 1180px;
+      margin: 0 auto 70px;
+      padding: 0 24px;
+    }
+
+    .gifting-card {
+      background: linear-gradient(125deg, var(--burgundy-dark), var(--burgundy));
+      color: #fff;
+      border-radius: 24px;
+      padding: 44px 32px;
+      border: 1px solid var(--gold);
+    }
+
+    .gifting-head {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 28px;
+    }
+
+    .gifting-head h2 {
+      font-family: var(--serif);
+      font-size: clamp(24px, 3.6vw, 36px);
+      color: var(--gold-soft);
+      margin: 8px 0;
+    }
+
+    .bulk-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .bulk-input-group label {
+      display: block;
+      font-size: 12px;
+      color: var(--gold-soft);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .bulk-input-group select, .bulk-input-group input {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(230, 199, 98, 0.4);
+      background: rgba(0, 0, 0, 0.28);
+      color: #fff;
+      font-size: 13.5px;
+    }
+
+    .bulk-submit-btn {
+      width: 100%;
+      background: var(--gold);
+      color: #1A0D0E;
+      border: none;
+      padding: 15px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    /* 8. STICKY CART & MODALS */
+    .sticky-bag-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 300;
+      background: var(--burgundy-dark);
+      color: #fff;
+      border-top: 1.5px solid var(--gold);
+      padding: 12px 24px;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 -10px 30px rgba(0,0,0,0.28);
+    }
+
+    .sticky-bag-bar.visible { display: flex; }
+
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 10, 10, 0.72);
+      backdrop-filter: blur(6px);
+      z-index: 500;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .modal-overlay.open { display: flex; }
+
+    .modal-box {
+      background: #fff;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 20px;
+      overflow: hidden;
+      max-height: 92vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .modal-header {
+      background: var(--burgundy);
+      color: #fff;
+      padding: 16px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-header h3 { font-family: var(--serif); font-size: 20px; color: var(--gold-soft); }
+    .modal-body { padding: 20px; overflow-y: auto; }
+
+    .cart-item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 13.5px;
+    }
+
+    .delivery-switch { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 0; }
+    .switch-card { border: 1.5px solid var(--border-subtle); border-radius: 12px; padding: 10px; text-align: center; cursor: pointer; }
+    .switch-card.active { border-color: var(--burgundy); background: var(--gold-pale); }
+
+    .min-alert {
+      background: #FEF3C7;
+      border: 1px solid #F59E0B;
+      color: #92400E;
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-size: 12px;
+      margin-bottom: 12px;
+      display: none;
+    }
+
+    .form-inputs input, .form-inputs textarea {
+      width: 100%; padding: 10px 14px; margin-bottom: 10px; border: 1px solid #D6CFC7; border-radius: 10px; font-size: 13px;
+    }
+
+    .bill-card {
+      background: var(--bg-ivory); padding: 14px; border-radius: 12px; margin-bottom: 14px; font-size: 13px; border: 1px solid var(--border-subtle);
+    }
+
+    .bill-row { display: flex; justify-content: space-between; margin-bottom: 5px; }
+    .bill-grand {
+      display: flex; justify-content: space-between; font-size: 17px; font-weight: 700; color: var(--burgundy);
+      border-top: 1px solid var(--border-subtle); padding-top: 8px; margin-top: 6px;
+    }
+
+    .wa-checkout-btn {
+      width: 100%; background: #1FA855; color: #fff; border: none; padding: 15px; border-radius: 50px; font-size: 14px; font-weight: 700; cursor: pointer;
+    }
+
+    .modern-footer {
+      background: #161210;
+      color: #C2B8B0;
+      padding: 60px 24px 40px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .modern-footer h3 {
+      font-family: var(--serif);
+      color: var(--gold-soft);
+      font-size: 26px;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 860px) {
+      .hero-container { grid-template-columns: 1fr; text-align: center; padding: 40px 20px; }
+      .hero-content p { margin: 0 auto 22px; }
+      .hero-buttons, .hero-metrics { justify-content: center; }
+      .desktop-nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. TOP ANNOUNCEMENT BAR -->
+  <div class="announcement-bar">
+    ✨ <strong>RAKESH SWEETS & SNACKS (AGRA):</strong> 100% Shuddh Desi Ghee Mithai, Taaza Khoya-Paneer, Dahi & Special Imarti • Direct WhatsApp Order
+  </div>
+
+  <!-- 2. HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="brand-identity">
+        <div class="royal-monogram">RS</div>
+        <div class="brand-text">
+          <h1>Rakesh Sweets</h1>
+          <span>Sweets • Snacks • Dairy | Agra</span>
+        </div>
+      </a>
+
+      <ul class="desktop-nav">
+        <li><a href="#collectionSection">Mithai Photos & Rates</a></li>
+        <li><a href="#fullRateListSection">Full Rate Chart (भाव सूची)</a></li>
+        <li><a href="#collectionSection" onclick="jumpToCategory('dairy', 3)">Dahi • Khoya • Paneer</a></li>
+        <li><a href="#giftingSection">Wedding & Bulk Order</a></li>
+      </ul>
+
+      <div class="header-right">
+        <button class="qr-btn-modern" onclick="toggleStandeeModal(true)">📱 Counter QR</button>
+        <button class="cart-pill-btn" onclick="openCheckoutModal()">
+          🛍️ <span id="headerCartCount">0</span> • <span id="headerCartTotal">₹0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. HERO SHOWCASE -->
+  <section class="hero-showcase">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="hero-tag">📍 Gwalior Rd, Bundu Katra, Madhu Nagar, Agra</span>
+        <h2>Pure Desi Ghee Mithai & <em>Fresh Dairy Everyday</em></h2>
+        <p>
+           ताज़ा काजू कतली, देसी घी के लड्डू, गरमा-गरम कढ़ाई इमरती, आगरा की मशहूर बेड़ई-सब्ज़ी और शुद्ध दही-खोया-पनीर — नीचे फोटो और ताज़ा रेट देखकर सीधे WhatsApp पर ऑर्डर करें!
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#collectionSection" class="btn-gold-solid">मिठाई फोटो व रेट देखें ↓</a>
+          <a href="#fullRateListSection" class="btn-ghost-light">पूरी रेट लिस्ट (Rate Chart)</a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <strong>16+ Fresh Items</strong>
+            <span>With Live Rate List</span>
+          </div>
+          <div class="metric-item">
+            <strong>VIP Pickup</strong>
+            <span>₹0 Charge at Shop</span>
+          </div>
+          <div class="metric-item">
+            <strong>Home Delivery</strong>
+            <span>On Orders Above ₹500</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual-frame">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kaju_katli_sweet.jpg/640px-Kaju_katli_sweet.jpg"
+             onerror="this.src='https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=85'"
+             alt="Rakesh Sweets Agra" />
+        <div class="floating-specialty-card">
+          <strong>🍬 दही • खोया • पनीर • मटर • मशरूम • स्पेशल इमरती</strong>
+          <span>Gwalior Rd, Bundu Katra, Madhu Nagar, Agra</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CIRCULAR CATEGORY STRIP -->
+  <section class="circular-categories">
+    <div class="cat-strip-grid">
+      <div class="circle-cat-item" onclick="jumpToCategory('ghee', 1)">
+        <div class="circle-img-ring">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kaju_katli_sweet.jpg/640px-Kaju_katli_sweet.jpg"
+               onerror="this.src='https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&q=80'" alt="Desi Ghee Mithai" />
+        </div>
+        <span>देसी घी मिठाई</span>
+        <small>₹480 – ₹920/Kg</small>
+      </div>
+
+      <div class="circle-cat-item" onclick="jumpToCategory('chhena', 2)">
+        <div class="circle-img-ring">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Ras_Malai_2.JPG/640px-Ras_Malai_2.JPG"
+               onerror="this.src='https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=400&q=80'" alt="Chhena & Rasmalai" />
+        </div>
+        <span>रसमलाई व छेना</span>
+        <small>₹400 – ₹600/Kg</small>
+      </div>
+
+      <div class="circle-cat-item" onclick="jumpToCategory('snacks', 3)">
+        <div class="circle-img-ring">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Jalebi_sweet.jpg/640px-Jalebi_sweet.jpg"
+               onerror="this.src='https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=400&q=80'" alt="Imarti & Snacks" />
+        </div>
+        <span>इमरती व स्नैक्स</span>
+        <small>₹160 – ₹440/Kg</small>
+      </div>
+
+      <div class="circle-cat-item" onclick="jumpToCategory('dairy', 4)">
+        <div class="circle-img-ring">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Paneer_cheese.jpg/640px-Paneer_cheese.jpg"
+               onerror="this.src='https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=400&q=80'" alt="Dairy" />
+        </div>
+        <span>दही • खोया • पनीर</span>
+        <small>₹140 – ₹420/Kg</small>
+      </div>
+
+      <div class="circle-cat-item" onclick="jumpToCategory('gift', 5)">
+        <div class="circle-img-ring">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Laddu_Sweet.JPG/640px-Laddu_Sweet.JPG"
+               onerror="this.src='https://images.unsplash.com/photo-1589119908995-c6837fa14848?auto=format&fit=crop&w=400&q=80'" alt="Gift Boxes" />
+        </div>
+        <span>गिफ्ट डिब्बे</span>
+        <small>₹640 – ₹850/Box</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SWEETS PHOTO GALLERY WITH CLEAR RATES UNDER EVERY PHOTO -->
+  <section class="collection-section" id="collectionSection">
+    <div class="section-title-wrap">
+      <span class="eyebrow">Fresh Mithai Photos & Live Rates</span>
+      <h2>मिठाई फोटो गैलरी एवं ताज़ा रेट</h2>
+      <p>हर मिठाई की फोटो के नीचे 250g, 500g और 1 Kg के रेट दिए गए हैं — अपने हिसाब से वज़न चुनें</p>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-pill active" onclick="filterCategory('all', this)">सभी आइटम (All 16 Items)</button>
+      <button class="filter-pill" onclick="filterCategory('ghee', this)">देसी घी मिठाई (Mithai)</button>
+      <button class="filter-pill" onclick="filterCategory('chhena', this)">रसमलाई, गुलाब जामुन व छेना</button>
+      <button class="filter-pill" onclick="filterCategory('snacks', this)">स्पेशल इमरती, बेड़ई व समोसा</button>
+      <button class="filter-pill" onclick="filterCategory('dairy', this)">दही • खोया • पनीर • मटर</button>
+      <button class="filter-pill" onclick="filterCategory('gift', this)">त्योहार गिफ्ट बॉक्स</button>
+    </div>
+
+    <div class="product-grid" id="mithaiGrid"></div>
+  </section>
+
+  <!-- 6. COMPLETE HALWAI RATE LIST TABLE (पूरा भाव चार्ट) -->
+  <section class="full-ratelist-section" id="fullRateListSection">
+    <div class="ratelist-card">
+      <div class="ratelist-header">
+        <div>
+          <h3>📋 Rakesh Sweets — पूरी रेट लिस्ट (Complete Rate Chart)</h3>
+          <p>दुकान के सभी मिठाई, डेयरी और स्नैक्स आइटम के ताज़ा भाव (250g / 500g / 1 Kg)</p>
+        </div>
+        <span style="background:var(--gold);color:#111;padding:6px 14px;border-radius:50px;font-size:12px;font-weight:700;">
+          100% Shuddh & Taaza
+        </span>
+      </div>
+
+      <div class="table-responsive">
+        <table class="rate-table">
+          <thead>
+            <tr>
+              <th>मिठाई / आइटम का नाम (Item)</th>
+              <th>कैटेगरी</th>
+              <th>250 ग्राम रेट</th>
+              <th>500 ग्राम रेट</th>
+              <th>1 किलो रेट (Per Kg)</th>
+              <th>तुरंत जोड़ें</th>
+            </tr>
+          </thead>
+          <tbody id="fullRateTableBody">
+            <!-- Populated Dynamically via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. BULK & WEDDING GIFTING -->
+  <section class="gifting-section" id="giftingSection">
+    <div class="gifting-card">
+      <div class="gifting-head">
+        <span style="font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#fff;opacity:0.85;">SHAADI, BHANDARA & DIWALI BULK ORDER</span>
+        <h2>शादी-पार्टी थोक खोया, पनीर व मिठाई बुकिंग</h2>
+        <p style="font-size:14px;color:rgba(255,255,255,0.85);">
+          शादी, सगाई, भंडारे या दिवाली के लिए थोक रेट पर शुद्ध खोया, पनीर, दही, सफल मटर और मिठाई के डिब्बों का स्पेशल रेट सीधे WhatsApp पर पाएं।
+        </p>
+      </div>
+
+      <div class="bulk-grid">
+        <div class="bulk-input-group">
+          <label>क्या बुक करना चाहते हैं?</label>
+          <select id="bulkOccasion">
+            <option value="शादी/पार्टी के लिए थोक खोया, पनीर, दही व मटर">थोक खोया, पनीर, दही व मटर</option>
+            <option value="दिवाली मिठाई गिफ्ट बॉक्स (Diwali Gift Boxes)">दिवाली मिठाई गिफ्ट बॉक्स</option>
+            <option value="शादी / सगाई मिठाई डिब्बे (Wedding Bhaji Boxes)">शादी / सगाई मिठाई डिब्बे</option>
+            <option value="गरमा-गरम बेड़ई-सब्ज़ी, समोसे व इमरती पार्टी ऑर्डर">बेड़ई-सब्ज़ी, समोसे व इमरती ऑर्डर</option>
+          </select>
+        </div>
+
+        <div class="bulk-input-group">
+          <label>अनुमानित मात्रा (Quantity)</label>
+          <select id="bulkQty">
+            <option value="10 Kg – 30 Kg (खोया / पनीर / मिठाई)">10 Kg – 30 Kg (खोया / पनीर / मिठाई)</option>
+            <option value="30 Kg – 100 Kg+ थोक ऑर्डर">30 Kg – 100 Kg+ थोक ऑर्डर</option>
+            <option value="50 से 200 मिठाई के डिब्बे">50 से 200 मिठाई के डिब्बे</option>
+          </select>
+        </div>
+
+        <div class="bulk-input-group">
+          <label>आपका नाम (Your Name)</label>
+          <input type="text" id="bulkName" placeholder="अपना नाम लिखें" />
+        </div>
+
+        <div class="bulk-input-group">
+          <label>मोबाइल नंबर (Phone)</label>
+          <input type="tel" id="bulkPhone" placeholder="10-digit मोबाइल नंबर" />
+        </div>
+      </div>
+
+      <button class="bulk-submit-btn" onclick="sendBulkEnquiryWhatsApp()">
+        📲 राकेश भाई से WhatsApp पर थोक रेट पूछें →
+      </button>
+    </div>
+  </section>
+
+  <!-- 8. STICKY BOTTOM BAG BAR -->
+  <div class="sticky-bag-bar" id="stickyCartBar">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span style="background:var(--gold);color:#111;font-weight:700;padding:6px 14px;border-radius:50px;font-size:13px;" id="bottomCartCount">0 Items</span>
+      <div>
+        <div style="font-size:16px;font-weight:700;" id="bottomCartTotal">₹0</div>
+        <div style="font-size:11px;color:var(--gold-soft);">Dukan Pickup (₹0) या Home Delivery (Min ₹500)</div>
+      </div>
+    </div>
+    <button onclick="openCheckoutModal()" style="background:var(--gold);color:#111;border:none;padding:12px 24px;border-radius:50px;font-weight:700;font-size:13px;cursor:pointer;">
+      WhatsApp ऑर्डर पूरा करें →
+    </button>
+  </div>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>🛒 आपका ऑर्डर बिल (Rakesh Sweets)</h3>
+        <button onclick="closeCheckoutModal()" style="background:none;border:none;color:#fff;font-size:20px;cursor:pointer;">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div id="modalCartItems" style="margin-bottom:14px;"></div>
+
+        <label style="font-size:12px;font-weight:700;color:var(--text-charcoal);display:block;">
+          1. ऑर्डर कैसे लेना चाहेंगे?
+        </label>
+        <div class="delivery-switch">
+          <div class="switch-card active" id="modePickup" onclick="setDeliveryMode('pickup')">
+            <strong style="font-size:13px;display:block;color:var(--burgundy);">🛍 दुकान से पिकअप</strong>
+            <small style="font-size:11px;color:var(--text-muted);">Madhu Nagar Counter • ₹0 चार्ज</small>
+          </div>
+          <div class="switch-card" id="modeDelivery" onclick="setDeliveryMode('delivery')">
+            <strong style="font-size:13px;display:block;color:var(--burgundy);">🛵 होम डिलीवरी</strong>
+            <small style="font-size:11px;color:var(--text-muted);">Min. ₹500 ऑर्डर • +₹30 चार्ज</small>
+          </div>
+        </div>
+
+        <div class="min-alert" id="minOrderAlert">
+          ⚠️ <strong>ध्यान दें:</strong> होम डिलीवरी केवल <strong>₹500 या उससे अधिक</strong> के ऑर्डर पर उपलब्ध है। कृपया ₹<span id="shortfallAmt">0</span> की मिठाई और जोड़ें या <strong>दुकान से पिकअप</strong> चुनें।
+        </div>
+
+        <div class="form-inputs">
+          <input type="text" id="custName" placeholder="आपका नाम (Your Name) *" />
+          <input type="tel" id="custPhone" placeholder="मोबाइल नंबर (Phone Number) *" />
+          <textarea id="custAddress" rows="2" placeholder="पता (Madhu Nagar / Bundu Katra / Gwalior Rd) या पिकअप का समय..."></textarea>
+        </div>
+
+        <div class="bill-card">
+          <div class="bill-row"><span>मिठाई व सामान का मूल्य</span><span id="billSubTotal">₹0</span></div>
+          <div class="bill-row"><span>डिलीवरी चार्ज</span><span id="billDelivery">₹0 (Store Pickup)</span></div>
+          <div class="bill-grand"><span>कुल बिल (Grand Total)</span><span id="billGrandTotal">₹0</span></div>
+        </div>
+
+        <button class="wa-checkout-btn" id="finalWaSubmitBtn" onclick="submitOrderToWhatsApp()">
+          📲 WhatsApp पर ऑर्डर और बिल भेजें →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- COUNTER QR STANDEE MODAL -->
+  <div class="modal-overlay" id="standeeModal" onclick="toggleStandeeModal(false)">
+    <div class="modal-box" style="max-width:360px;text-align:center;padding:28px 24px;border:2px solid var(--gold);" onclick="event.stopPropagation()">
+      <div class="royal-monogram" style="margin:0 auto 10px;">RS</div>
+      <h3 style="font-family:var(--serif);font-size:24px;color:var(--burgundy-dark);">RAKESH SWEETS</h3>
+      <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px;">
+        दही • खोया • पनीर • मटर • मशरूम • मिठाई
+      </p>
+      <p style="font-size:12.5px;color:var(--text-muted);">QR स्कैन करें और फोन पर मिठाई की फोटो व रेट देखकर ऑर्डर करें</p>
+      <div style="padding:14px;background:#fff;border:1.5px solid var(--border-subtle);border-radius:16px;display:inline-block;margin:14px 0;">
+        <img id="qrCodeImg" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://rakesh-sweets.vercel.app" alt="QR" style="width:160px;height:160px;display:block;" />
+      </div>
+      <p style="font-size:12px;font-weight:600;color:var(--burgundy);">📍 Gwalior Rd, Bundu Katra, Madhu Nagar, Agra</p>
+      <button onclick="toggleStandeeModal(false)" style="margin-top:14px;background:var(--burgundy);color:#fff;border:none;padding:9px 24px;border-radius:50px;font-weight:600;cursor:pointer;">बंद करें</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="modern-footer">
+    <h3>RAKESH SWEETS & SNACKS</h3>
+    <p style="color:var(--gold-soft);font-weight:600;">दही • खोया • पनीर • मटर • मशरूम • स्पेशल इमरती • बेड़ई-सब्ज़ी एवं देसी घी मिठाइयां</p>
+    <p style="margin-top:6px;">📍 Gwalior Rd, Bundu Katra, Madhu Nagar, Agra, Uttar Pradesh</p>
+    <p>🕒 खुलने का समय: सुबह 7:00 बजे से रात 10:30 बजे तक</p>
+    <p style="font-size:11px;opacity:0.5;margin-top:22px;">© 2026 Rakesh Sweets & Snacks, Agra. Powered by Direct WhatsApp Ordering.</p>
+  </footer>
+
+  <!-- =========================================================
+       JAVASCRIPT: 16 AUTHENTIC SWEETS + PHOTO CARDS + RATE TABLE
+       ========================================================= -->
+  <script>
+    const HALWAI_WHATSAPP = ""; // Rakesh Bhaiya's 10-digit WhatsApp number with 91
+
+    // Fallback Vegetarian Sweet/Snack Photos if any image fails to load
+    const FALLBACK_IMAGES = [
+      "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80",
+      "https://images.unsplash.com/photo-1589119908995-c6837fa14848?auto=format&fit=crop&w=700&q=80",
+      "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=80",
+      "https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=700&q=80"
+    ];
+
+    const MITHAI_ITEMS = [
+      {
+        id: 1,
+        name: "स्पेशल काजू कतली (Royal Kaju Katli)",
+        cat: "ghee",
+        catName: "देसी घी मिठाई",
+        badge: "🔥 Bestseller",
+        pricePerKg: 920,
+        desc: "प्रीमियम गोवा काजू और असली चांदी के वर्क से तैयार मुलायम काजू बर्फी।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kaju_katli_sweet.jpg/640px-Kaju_katli_sweet.jpg",
+        fallback: FALLBACK_IMAGES[0]
+      },
+      {
+        id: 2,
+        name: "कढ़ाई स्पेशल गरमा-गरम इमरती (Desi Ghee Imarti)",
+        cat: "snacks",
+        catName: "स्पेशल इमरती",
+        badge: "दुकान की शान",
+        pricePerKg: 440,
+        desc: "रसीली, कुरकुरी और ताज़ा तैयार की गई हमारी सबसे मशहूर स्पेशल इमरती।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Jalebi_sweet.jpg/640px-Jalebi_sweet.jpg",
+        fallback: FALLBACK_IMAGES[3]
+      },
+      {
+        id: 3,
+        name: "शाही मोतीचूर लड्डू (Desi Ghee Motichoor Laddu)",
+        cat: "ghee",
+        catName: "देसी घी मिठाई",
+        badge: "100% शुद्ध घी",
+        pricePerKg: 520,
+        desc: "शुद्ध देसी घी, केसर और मगज-पिस्ता से भरपूर ताज़ा मोतीचूर लड्डू।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Laddu_Sweet.JPG/640px-Laddu_Sweet.JPG",
+        fallback: FALLBACK_IMAGES[1]
+      },
+      {
+        id: 4,
+        name: "केसरिया रसमलाई (Special Kesar Rasmalai)",
+        cat: "chhena",
+        catName: "रसमलाई व छेना",
+        badge: "ताज़ा छेना",
+        pricePerKg: 600,
+        desc: "गाढ़े केसर-पिस्ता रबड़ी दूध में डूबी हुई मुंह में घुल जाने वाली रसमलाई।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Ras_Malai_2.JPG/640px-Ras_Malai_2.JPG",
+        fallback: FALLBACK_IMAGES[2]
+      },
+      {
+        id: 5,
+        name: "गरमा-गरम मावा गुलाब जामुन (Gulab Jamun)",
+        cat: "chhena",
+        catName: "रसमलाई व छेना",
+        badge: "गरमा-गरम",
+        pricePerKg: 460,
+        desc: "ताज़ा खोया और इलायची की खुशबू से भरपूर रसीले गुलाब जामुन।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Gulab_jamun_%28Gibraltar%2C_November_2020%29.jpg/640px-Gulab_jamun_%28Gibraltar%2C_November_2020%29.jpg",
+        fallback: FALLBACK_IMAGES[1]
+      },
+      {
+        id: 6,
+        name: "दानेदार मिल्क केक / कलाकंद (Alwar Milk Cake)",
+        cat: "ghee",
+        catName: "देसी घी मिठाई",
+        badge: "ताज़ा मावा",
+        pricePerKg: 560,
+        desc: "शुद्ध दूध को घंटों कढ़ाकर बनाया गया ताज़ा दानेदार कलाकंद व मिल्क केक।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Kalakand_sweet.jpg/640px-Kalakand_sweet.jpg",
+        fallback: FALLBACK_IMAGES[2]
+      },
+      {
+        id: 7,
+        name: "मथुरा स्पेशल केसर पेड़ा (Mawa Kesar Peda)",
+        cat: "ghee",
+        catName: "देसी घी मिठाई",
+        badge: "पूजा व प्रसाद",
+        pricePerKg: 500,
+        desc: "भुने हुए खोये और इलायची से तैयार पारंपरिक मथुरा स्टाइल पेड़े।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Dharwad_Pedha.JPG/640px-Dharwad_Pedha.JPG",
+        fallback: FALLBACK_IMAGES[0]
+      },
+      {
+        id: 8,
+        name: "देसी घी बेसन लड्डू (Special Besan Laddu)",
+        cat: "ghee",
+        catName: "देसी घी मिठाई",
+        badge: "घर जैसा स्वाद",
+        pricePerKg: 520,
+        desc: "मोटे दानेदार बेसन, देसी घी और काजू-बादाम के टुकड़ों से बने लड्डू।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Besan_Ke_Ladoo.JPG/640px-Besan_Ke_Ladoo.JPG",
+        fallback: FALLBACK_IMAGES[1]
+      },
+      {
+        id: 9,
+        name: "स्पेशल स्पंजी रसगुल्ला (White Sponge Rasgulla)",
+        cat: "chhena",
+        catName: "रसमलाई व छेना",
+        badge: "ताज़ा छेना",
+        pricePerKg: 400,
+        desc: "हल्की चाशनी में डूबे हुए एकदम नरम और स्पंजी सफेद छेना रसगुल्ले।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Rosogolla.jpg/640px-Rosogolla.jpg",
+        fallback: FALLBACK_IMAGES[2]
+      },
+      {
+        id: 10,
+        name: "काजू पिस्ता रोल एवं मावा बर्फी (Kaju Pista Roll)",
+        cat: "ghee",
+        catName: "देसी घी मिठाई",
+        badge: "शाही मिठाई",
+        pricePerKg: 980,
+        desc: "काजू और हरे पिस्ता की परत से तैयार प्रीमियम शाही रोल।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Kaju_Pista_Roll.JPG/640px-Kaju_Pista_Roll.JPG",
+        fallback: FALLBACK_IMAGES[0]
+      },
+      {
+        id: 11,
+        name: "आगरा स्पेशल बेड़ई एवं आलू सब्ज़ी (Bedai Sabzi)",
+        cat: "snacks",
+        catName: "गरमा-गरम नाश्ता",
+        badge: "सुबह का नाश्ता",
+        pricePerKg: 160,
+        desc: "आगरा की मशहूर मसालेदार आलू की सब्ज़ी और गरमा-गरम खस्ता बेड़ई।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Puri_bhaji.jpg/640px-Puri_bhaji.jpg",
+        fallback: FALLBACK_IMAGES[0]
+      },
+      {
+        id: 12,
+        name: "गरमा-गरम खस्ता समोसा एवं कचौड़ी (Samosa Pack)",
+        cat: "snacks",
+        catName: "गरमा-गरम नाश्ता",
+        badge: "चटनी के साथ",
+        pricePerKg: 200,
+        desc: "मसालेदार आलू-मटर स्टफिंग वाले कुरकुरे समोसे एवं खस्ता कचौड़ी।",
+        img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80",
+        fallback: FALLBACK_IMAGES[0]
+      },
+      {
+        id: 13,
+        name: "ताज़ा मलाई पनीर (Fresh Soft Malai Paneer)",
+        cat: "dairy",
+        catName: "डेयरी आइटम",
+        badge: "100% शुद्ध डेयरी",
+        pricePerKg: 380,
+        desc: "रोज़ाना सुबह ताज़ा तैयार किया गया मुलायम और शुद्ध मलाई पनीर।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Paneer_cheese.jpg/640px-Paneer_cheese.jpg",
+        fallback: FALLBACK_IMAGES[2]
+      },
+      {
+        id: 14,
+        name: "शुद्ध भैंस के दूध का ताज़ा खोया (Pure Khoya/Mawa)",
+        cat: "dairy",
+        catName: "डेयरी आइटम",
+        badge: "मिठाई व घर के लिए",
+        pricePerKg: 420,
+        desc: "गाढ़ा, दानेदार और 100% शुद्ध ताज़ा खोया (गुजिया, हलवा व मिठाई के लिए)।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Khoa.jpg/640px-Khoa.jpg",
+        fallback: FALLBACK_IMAGES[2]
+      },
+      {
+        id: 15,
+        name: "स्पेशल गाढ़ा दही एवं ताज़ा मटर-मशरूम (Fresh Dahi)",
+        cat: "dairy",
+        catName: "डेयरी आइटम",
+        badge: "रोज़ाना ताज़ा",
+        pricePerKg: 140,
+        desc: "मलाईदार गाढ़ा दही, हरी मटर और ताज़ा मशरूम (घर व शादी ऑर्डर के लिए)।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Dahi_%28curd%29.jpg/640px-Dahi_%28curd%29.jpg",
+        fallback: FALLBACK_IMAGES[2]
+      },
+      {
+        id: 16,
+        name: "रॉयल दिवाली / शादी मिक्स मिठाई गिफ्ट बॉक्स (1 Kg)",
+        cat: "gift",
+        catName: "गिफ्ट बॉक्स",
+        badge: "🎁 फेस्टिव पैक",
+        pricePerKg: 720,
+        desc: "काजू बर्फी, पिस्ता रोल, लड्डू और मावा मिठाई का शाही गिफ्ट डिब्बा।",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Indian_sweets_at_a_sweet_shop_in_India.jpg/640px-Indian_sweets_at_a_sweet_shop_in_India.jpg",
+        fallback: FALLBACK_IMAGES[1]
+      }
+    ];
+
+    let selectedWeights = {};
+    MITHAI_ITEMS.forEach(item => selectedWeights[item.id] = 0.5); // Default 500g selected
+
+    let cart = [];
+    let deliveryMode = 'pickup';
+
+    function renderMenu(filterCat = 'all') {
+      const grid = document.getElementById('mithaiGrid');
+      grid.innerHTML = '';
+      const list = filterCat === 'all' ? MITHAI_ITEMS : MITHAI_ITEMS.filter(i => i.cat === filterCat);
+
+      list.forEach(item => {
+        const w = selectedWeights[item.id] || 0.5;
+        const rate250 = Math.round(item.pricePerKg * 0.25);
+        const rate500 = Math.round(item.pricePerKg * 0.5);
+        const rate1000 = item.pricePerKg;
+        const currentPrice = Math.round(item.pricePerKg * w);
+        const wLabel = w === 0.25 ? '250g' : (w === 0.5 ? '500g' : '1 Kg');
+
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+          <div>
+            <div class="product-media">
+              <img src="${item.img}" onerror="this.onerror=null;this.src='${item.fallback}';" alt="${item.name}" />
+              <span class="product-tag">${item.badge}</span>
+              <div class="veg-icon" title="100% Pure Vegetarian"></div>
+              <div class="photo-rate-ribbon">रेट: ₹${rate1000} / Kg</div>
+            </div>
+
+            <div class="product-info">
+              <h3 class="product-title">${item.name}</h3>
+              <p class="product-desc">${item.desc}</p>
+
+              <!-- Clear 3-Weight Rate Breakdown Right Under Photo -->
+              <div class="rate-breakdown-box">
+                <div class="rate-cell ${w === 0.25 ? 'active' : ''}" onclick="changeWeight(${item.id}, 0.25, '${filterCat}')">
+                  <span class="w-label">250 ग्राम</span>
+                  <strong class="w-price">₹${rate250}</strong>
+                </div>
+                <div class="rate-cell ${w === 0.5 ? 'active' : ''}" onclick="changeWeight(${item.id}, 0.5, '${filterCat}')">
+                  <span class="w-label">500 ग्राम</span>
+                  <strong class="w-price">₹${rate500}</strong>
+                </div>
+                <div class="rate-cell ${w === 1 ? 'active' : ''}" onclick="changeWeight(${item.id}, 1, '${filterCat}')">
+                  <span class="w-label">1 किलो</span>
+                  <strong class="w-price">₹${rate1000}</strong>
+                </div>
+              </div>
+
+              <div class="product-bottom">
+                <div class="product-price">
+                  ₹${currentPrice}
+                  <small>चुना गया: ${wLabel}</small>
+                </div>
+                <button class="btn-add-bag" onclick="addToCart(${item.id})">+ ऑर्डर में जोड़ें</button>
+              </div>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Populate Full Rate List Table Below Gallery
+    function renderFullRateTable() {
+      const tbody = document.getElementById('fullRateTableBody');
+      tbody.innerHTML = MITHAI_ITEMS.map(item => {
+        const r250 = Math.round(item.pricePerKg * 0.25);
+        const r500 = Math.round(item.pricePerKg * 0.5);
+        return `
+          <tr>
+            <td>
+              <div class="table-item-cell">
+                <img src="${item.img}" onerror="this.onerror=null;this.src='${item.fallback}';" alt="${item.name}" />
+                <strong>${item.name}</strong>
+              </div>
+            </td>
+            <td><span style="font-size:12px;color:var(--text-muted);">${item.catName}</span></td>
+            <td><strong>₹${r250}</strong></td>
+            <td><strong>₹${r500}</strong></td>
+            <td><strong style="color:var(--burgundy);font-size:15px;">₹${item.pricePerKg} / Kg</strong></td>
+            <td>
+              <button class="quick-add-pill" onclick="quickAddFromTable(${item.id}, 0.5)">+ 500g जोड़ें</button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function quickAddFromTable(itemId, weightVal) {
+      selectedWeights[itemId] = weightVal;
+      addToCart(itemId);
+    }
+
+    function changeWeight(itemId, weightVal, currentFilter) {
+      selectedWeights[itemId] = weightVal;
+      renderMenu(currentFilter);
+    }
+
+    function filterCategory(cat, btn) {
+      document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      renderMenu(cat);
+    }
+
+    function jumpToCategory(cat, pillIndex) {
+      const pills = document.querySelectorAll('.filter-pill');
+      filterCategory(cat, pills[pillIndex]);
+      document.getElementById('collectionSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function addToCart(itemId) {
+      const item = MITHAI_ITEMS.find(i => i.id === itemId);
+      const w = selectedWeights[itemId] || 0.5;
+      const wLabel = w === 0.25 ? '250g' : (w === 0.5 ? '500g' : '1 Kg');
+      const unitPrice = Math.round(item.pricePerKg * w);
+      const key = `${itemId}_${wLabel}`;
+
+      const existing = cart.find(c => c.key === key);
+      if (existing) existing.qty += 1;
+      else cart.push({ key, id: item.id, name: item.name, weightLabel: wLabel, unitPrice, qty: 1 });
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const totalItems = cart.reduce((sum, i) => sum + i.qty, 0);
+      const subTotal = cart.reduce((sum, i) => sum + (i.unitPrice * i.qty), 0);
+
+      document.getElementById('headerCartCount').textContent = totalItems;
+      document.getElementById('headerCartTotal').textContent = `₹${subTotal}`;
+      document.getElementById('bottomCartCount').textContent = `${totalItems} Items`;
+      document.getElementById('bottomCartTotal').textContent = `कुल: ₹${subTotal}`;
+      document.getElementById('stickyCartBar').classList.toggle('visible', totalItems > 0);
+
+      renderModalCart(subTotal);
+    }
+
+    function renderModalCart(subTotal) {
+      const listEl = document.getElementById('modalCartItems');
+      if (cart.length === 0) {
+        listEl.innerHTML = `<p style="text-align:center;color:#888;padding:14px;">आपका कार्ट खाली है। कृपया मेन्यू से मिठाई चुनें।</p>`;
+      } else {
+        listEl.innerHTML = cart.map(c => `
+          <div class="cart-item-row">
+            <div>
+              <strong>${c.name}</strong> <span style="color:var(--burgundy);font-weight:700;">(${c.weightLabel})</span>
+              <div style="font-size:11.5px;color:#666;">₹${c.unitPrice} × ${c.qty} = ₹${c.unitPrice * c.qty}</div>
+            </div>
+            <div>
+              <button onclick="changeCartQty('${c.key}', -1)" style="width:26px;height:26px;border-radius:6px;border:1px solid #ccc;background:#fff;cursor:pointer;">-</button>
+              <span style="margin:0 8px;font-weight:700;">${c.qty}</span>
+              <button onclick="changeCartQty('${c.key}', 1)" style="width:26px;height:26px;border-radius:6px;border:1px solid #ccc;background:#fff;cursor:pointer;">+</button>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      const deliveryCharge = (deliveryMode === 'delivery' && subTotal >= 500) ? 30 : 0;
+      const grandTotal = subTotal + deliveryCharge;
+
+      document.getElementById('billSubTotal').textContent = `₹${subTotal}`;
+      document.getElementById('billDelivery').textContent = deliveryMode === 'pickup' ? '₹0 (दुकान से पिकअप)' : '₹30 (Home Delivery)';
+      document.getElementById('billGrandTotal').textContent = `₹${grandTotal}`;
+
+      const alertBox = document.getElementById('minOrderAlert');
+      const submitBtn = document.getElementById('finalWaSubmitBtn');
+
+      if (deliveryMode === 'delivery' && subTotal < 500) {
+        alertBox.style.display = 'block';
+        document.getElementById('shortfallAmt').textContent = 500 - subTotal;
+        submitBtn.style.opacity = '0.5';
+        submitBtn.disabled = true;
+      } else {
+        alertBox.style.display = 'none';
+        submitBtn.style.opacity = '1';
+        submitBtn.disabled = false;
+      }
+    }
+
+    function changeCartQty(key, delta) {
+      const idx = cart.findIndex(c => c.key === key);
+      if (idx > -1) {
+        cart[idx].qty += delta;
+        if (cart[idx].qty <= 0) cart.splice(idx, 1);
+      }
+      updateCartUI();
+    }
+
+    function setDeliveryMode(mode) {
+      deliveryMode = mode;
+      document.getElementById('modePickup').classList.toggle('active', mode === 'pickup');
+      document.getElementById('modeDelivery').classList.toggle('active', mode === 'delivery');
+      updateCartUI();
+    }
+
+    function openCheckoutModal() { document.getElementById('checkoutModal').classList.add('open'); updateCartUI(); }
+    function closeCheckoutModal() { document.getElementById('checkoutModal').classList.remove('open'); }
+    function toggleStandeeModal(show) { document.getElementById('standeeModal').classList.toggle('open', show); }
+
+    function submitOrderToWhatsApp() {
+      if (cart.length === 0) return alert("कृपया पहले मेन्यू से कोई मिठाई चुनें!");
+      const name = document.getElementById('custName').value.trim() || 'ग्राहक';
+      const phone = document.getElementById('custPhone').value.trim() || '';
+      const address = document.getElementById('custAddress').value.trim() || 'दुकान से पिकअप (Madhu Nagar, Agra)';
+      const subTotal = cart.reduce((sum, i) => sum + (i.unitPrice * i.qty), 0);
+      const delCharge = deliveryMode === 'delivery' ? 30 : 0;
+      const grandTotal = subTotal + delCharge;
+      const modeText = deliveryMode === 'pickup' ? '🛍️ दुकान से पिकअप (Madhu Nagar)' : '🛵 होम डिलीवरी';
+
+      let itemsText = cart.map((c, idx) => `${idx + 1}. *${c.name}* (${c.weightLabel}) × ${c.qty} = ₹${c.unitPrice * c.qty}`).join('\n');
+
+      const msg =
+        `🍬 *नया मिठाई ऑर्डर — RAKESH SWEETS (AGRA)* 🍬\n\n` +
+        `👤 *नाम:* ${name}\n📞 *मोबाइल:* ${phone}\n🚚 *मोड:* ${modeText}\n📍 *पता/समय:* ${address}\n\n` +
+        `📋 *ऑर्डर की मिठाइयां:*\n${itemsText}\n\n` +
+        `✅ *कुल बिल (Grand Total): ₹${grandTotal}*\n\nकृपया पेमेंट के लिए अपना UPI QR Code भेजें। 🙏`;
+
+      window.open(`https://wa.me/${HALWAI_WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    function sendBulkEnquiryWhatsApp() {
+      const occ = document.getElementById('bulkOccasion').value;
+      const qty = document.getElementById('bulkQty').value;
+      const name = document.getElementById('bulkName').value.trim() || 'ग्राहक';
+      const phone = document.getElementById('bulkPhone').value.trim() || '';
+      const msg = `🎁 *थोक / शादी ऑर्डर पूछताछ — RAKESH SWEETS (AGRA)*\n\n👤 *नाम:* ${name}\n📞 *मोबाइल:* ${phone}\n📦 *आइटम:* ${occ}\n⚖️ *मात्रा:* ${qty}\n\nनमस्ते राकेश भाई! कृपया इस थोक ऑर्डर के लिए स्पेशल रेट बताएं।`;
+      window.open(`https://wa.me/${HALWAI_WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    renderMenu('all');
+    renderFullRateTable();
+  </script>
+</body>
+</html>
